@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="greeting">
+	<p> 
+		Hi, friend! <br>
+		Now we will check your memory! <br>
+		Click Next to continue...
+	</p> 
+	<button>Next</button>
+</div>	
+<section class="rules">
+	<p>
+		<span>How to play:</span><br>
+		Memory is a counter game where the object is to find pairs.<br> 
+		When the game begins, all pictures are hidden.<br> 
+		<span>To Play:</span><br> 
+	</p>	
+		<ol>
+			<li>Select two cards to try to match the pictures</li>
+			<li>If you match the pictures you can go again.</li>
+			<li>If they don't match it is the computer turn them.</li>
+			<li>The player that finds all pairs wins!</li>
+			<li>Have Fun!</li>
+		</ol>
+	<button>
+		Next...
+	</button>
+</section>
+<section class="login">
+	<form>
+		<div class="columns-wrapper">
+			<div class="left-column">
+				<div>
+					<label for="firstName">
+					First Name:
+					</label>
+					<input type="text" id="firstName" name="firstName">
+				</div>
+				<div>
+					<label for="lastName">
+						Last Name:
+					</label>
+					<input type="text" id="lastName" name="lastName">
+				</div>
+				<div>
+					<label for="email">
+						Email:
+					</label>
+					<input type="text" id="email" name="email">
+				</div>
+			</div>
+			<div class="right-column">
+				<div class="levels-wrapper">	
+					<label for="complexity">Level:</label>
+					<select id="complexity">
+						<option value="12">Easy (3x4)</option>
+						<option value="16">Normal (4x4)</option>
+						<option value="20">Hard (5x4)</option>
+					</select>
+				</div>	
+				<label>Shirts:</label>
+				<div class="images-wrapper">
+					<img src="./images/stars.jpg" class="active" alt="stars">
+					<img src="./images/clouds.jpg" alt="clouds">
+					<img src="./images/sunset.jpg" alt="sunset">
+				</div>	
+			</div>
+		</div>
+	</form>
+	<button>Start</button>
+</section>
+<section class="game-board-wrapper">
+	<section class="left-column">
+		<div class="rating">
+				<span>Rating:</span>
+				<ol>
+					<li>dfd</li>
+					<li>dfdfd</li>
+					<li>dfdf</li>
+					<li>dfdf</li>
+					<li>dddd</li>
+					<li>dfdf</li>
+					<li>dfdf</li>
+					<li>dfdfd</li>
+					<li>dfdf</li>
+					<li>dfdfd</li>
+				</ol>
+		</div>
+	</section>
+	<section class="center-column">
+		<div class="timer">
+			<span>01:02</span>
+		</div>
+		<div class="game-board"></div>
+	</section>
+	<section class="right-column">
+		<span class="full-name"></span>
+		<button class="restart">Start New Game</button>
+	</section>
+</section>	
+<script src="./build.js"></script>
+</body>
+</html>
