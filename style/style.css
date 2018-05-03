@@ -9,7 +9,7 @@
 }
   
 body {
-    background-image: url('../images/bg-image2.jpg');
+    background-image: url('../images/bg-image.jpg');
     background-size: 100% 100%; 
     background-repeat: no-repeat; 
     display: flex;
@@ -217,18 +217,20 @@ form select {
 }
 
 .game-board-wrapper .center-column {
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
 }
 
 .game-board-wrapper .rating {
+    position: relative;
+    left: 9%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    width: 100%;
-    height: 35%;
+    align-items: center;
+    width: 115%;
+    height: 40%;
     background-image: url(../images/rating.png);
     background-size: 100% 100%;
     font-family: 'Gentium Basic', sans-serif;
@@ -236,9 +238,22 @@ form select {
     color: #528be9;
 }
 
+.rating span {
+    position: relative;
+    bottom: 2%;
+    left: 3%;
+    background-color: yellow;
+    color: blue;
+    border-radius: 11px;
+    width: 26%;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .rating ol {
     position: relative;
-    top: 10%;
+    top: 1%;
+    left: 4%;
 }
 
 .timer {
@@ -306,8 +321,50 @@ form select {
     background-size: 488px 484px;
 }
 
-.back{
-    /* transform: rotateY(180deg ); */
+.congrats {
+    position: absolute;
+    border-radius: 65px;
+    border: 17px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 50%;
+    min-width: 510px;
+    height: 50%;
+    background-color: rgba(129, 192, 212, 0.25);
+    opacity: 0;
+    z-index: -1;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.congrats .win {
+  color: yellow;
+  font-family: 'Yeseva One', sans-serif;
+  text-align: center;
+  font-size: 8rem;
+}
+
+.congrats .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.congrats .info span {
+    font-family: 'Gentium Basic', sans-serif;
+    font-size: 4rem;
+    color: white;
+}
+
+.congrats button{
+    background-color: yellow;
+    color: #528be9;
+    width: 31%;
+    font-size: 2rem;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 
 .rotate {
@@ -342,7 +399,7 @@ form select {
     background-position: -1099px -165px;
 }
 .icon-value-6 {
-    background-position: -1099px -165px;
+    background-position: -1099px -329px;
 }
 .icon-value-7 {
     background-position: -1222px -14px;
@@ -370,6 +427,10 @@ form select {
     transition: opacity 1s, visibility 0s 1s;
 }
 
+.disebled {
+    display: none !important;
+  }
+
 .move-right {
     transform: translateX(50%);
     transition: transform 2s;
@@ -380,7 +441,4 @@ form select {
     transition: transform 2s; 
 }
 
-.disebled {
-    display: none !important;
-  }
 
